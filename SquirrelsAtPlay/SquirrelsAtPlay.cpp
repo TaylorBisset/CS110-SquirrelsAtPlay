@@ -14,7 +14,7 @@ int main()
     cin >> temperature;
     if (temperature > 60)
     {
-        if ((isSummer == 'n' && temperature < 90) || (isSummer == 'y' && temperature < 100))
+        if ((isSummer == 'n' && temperature <= 90) || (isSummer == 'y' && temperature <= 100))
         {
             cout << endl << "The squirrels are out playing!\n";
         }
