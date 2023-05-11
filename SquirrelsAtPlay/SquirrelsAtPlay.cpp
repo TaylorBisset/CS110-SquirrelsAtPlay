@@ -18,7 +18,7 @@ int main()
         {
             cout << endl << "The squirrels are out playing!\n";
         }
-        
+
     }
-        
+    
 }
