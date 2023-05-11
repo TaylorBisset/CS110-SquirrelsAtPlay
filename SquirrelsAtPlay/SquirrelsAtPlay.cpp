@@ -18,7 +18,10 @@ int main()
         {
             cout << endl << "The squirrels are out playing!\n";
         }
-
+        return 0;
     }
-    
+    else
+    {
+        cout << endl << "The squirrels are playing inside.\n";
+    }
 }
