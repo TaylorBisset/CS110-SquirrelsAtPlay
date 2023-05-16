@@ -6,22 +6,27 @@ int main()
 {
     char isSummer = 'n';
     int temperature = 70;
-    
-    cout << "Is it Summer?\n(y/n) : ";
-    cin >> isSummer;
+    while (true)
+    {
+        cout << "Is it Summer?\n(y/n) : ";
+        cin >> isSummer;
 
-    cout << "What is the temperature in degrees Fahrenheit? ";
-    cin >> temperature;
-    if (temperature > 60)
-    {
-        if ((isSummer == 'n' && temperature <= 90) || (isSummer == 'y' && temperature <= 100))
+        cout << "What is the temperature in degrees Fahrenheit? ";
+        cin >> temperature;
+        if (temperature > 60)
         {
-            cout << endl << "The squirrels are out playing!\n";
+            if ((isSummer == 'n' && temperature <= 90) || (isSummer == 'y' && temperature <= 100))
+            {
+                cout << endl << "The squirrels are out playing!\n";
+            }
+            else
+            {
+                cout << endl << "The squirrels are playing inside.\n";
+            }
         }
-        return 0;
-    }
-    else
-    {
-        cout << endl << "The squirrels are playing inside.\n";
+        else
+        {
+            cout << endl << "The squirrels are playing inside.\n";
+        }
     }
 }
